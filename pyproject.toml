@@ -124,8 +124,9 @@ dev = [
 ]
 
 [tool.uv]
-override-dependencies = ["protobuf<6", "python-dateutil>=2.9.0"]
+override-dependencies = ["protobuf<6", "python-dateutil>=2.9.0", "coincurve==20.0.0"]
 config-settings = { "electrum_ecc.dont_compile" = "1" }
+
 
 [tool.taskipy.tasks]
 api = { cmd = "uvicorn --factory main:configure_production_app --timeout-graceful-shutdown 1 --reload", help = "run api service" }
