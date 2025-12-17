@@ -124,7 +124,7 @@ dev = [
 ]
 
 [tool.uv]
-override-dependencies = ["protobuf<6", "python-dateutil>=2.9.0", "coincurve==20.0.0"]
+override-dependencies = ["protobuf<6", "python-dateutil>=2.9.0", "coincurve==19.0.1"]
 config-settings = { "electrum_ecc.dont_compile" = "1" }
 
 
